@@ -4,7 +4,7 @@ function fetchData() {
     Http.open('GET', url);
     Http.send();
     Http.onreadystatechange = e => {
-        console.log(Http.responseText);
+        console.log(JSON.parse(Http.responseText));
     };
 }
 
