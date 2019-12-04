@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Matapp</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/26f2bbf500.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="fetchData()">
+        <div class="wrapper">
+            <div class="side">
+                <div class="side-nav">
+                    <a href="" class="title">
+                        Matapp
+                    </a>
+                    <a href="" class="active">
+                        Dagens Lunch
+                    </a>
+                    <a href="">
+                        Tidigare Luncher
+                    </a>
+                    <a href="">
+                        Inställningar
+                    </a>
+                    <div class="divider"></div>
+                    <a href="">
+                        Logga Ut
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="statistics">
+                    <p><span class="title">Dagens Lunch</span> - Torsdag 28 november</p>
+                    <div class="menu">
+                        <p>Vanlig mat</p>
+                        <p>Vegetarisk mat</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="numbers">
+                            <p><span class="title">8.5 / 10</span></p>
+                            <p>17 röster</p>
+                        </div>
+                        <div class="pie">
+                            <div class="graph"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments">
+                    <p class="title">Kommentarer</p>
+                    <div class="filter">
+                        <div class="radio">
+                            <input type="radio" name="rating" value="all" id="rating-all" checked>
+                            <label for="rating-all">Alla</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="rating" value="0" id="rating-0">
+                            <label for="rating-0">Negativa</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="rating" value="1" id="rating-1">
+                            <label for="rating-1">Neutrala</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="rating" value="2" id="rating-2">
+                            <label for="rating-2">Positiva</label>
+                        </div>
+                        <div class="filter-buttons">
+                            <button type="button">
+                                <i class="fas fa-sync-alt"></i> Uppdatera
+                            </button>
+                            <button type="button">
+                                <i class="fas fa-pen"></i> Fler filter
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-rating">
+                            <i class="fas fa-angry"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="tag">Kall mat</span>
+                                <span class="tag">Lång kö</span>
+                                <span class="card-time">12.43</span>
+                            </div>
+                            <p class="card-body">
+                                usch!!!!!!!!!!!!!!!!!!!!!!!!!
+                            </p>
+                            <div class="card-footer">
+                                <span class="card-informed">
+                                    <i class="fas fa-check"></i>
+                                     Personalen har informerats.
+                                </span>
+                                <button type="button" onclick="expand('answer-1')">
+                                    Svara
+                                </button>
+                            </div>
+                        </div>
+                        <div id="answer-1" class="answer">
+                            <textarea></textarea>
+                            <button type="button" onclick="">
+                                Skicka
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
